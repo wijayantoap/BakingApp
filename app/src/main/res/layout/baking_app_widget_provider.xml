@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        android:layout_margin="@dimen/size8">
+
+
+        <ImageView
+            android:id="@+id/imgTitle"
+            android:layout_width="@dimen/size40"
+            android:layout_height="@dimen/size40"
+            android:background="@drawable/ic_sign"
+            android:elevation="@dimen/size10"/>
+
+        <ImageView
+            android:layout_width="@dimen/size40"
+            android:layout_height="@dimen/size40"
+            android:background="@drawable/ic_add_to_widget"
+            android:elevation="20dp"/>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bakingappwidget"
+            android:layout_marginTop="@dimen/size8"
+            android:layout_marginLeft="@dimen/size8"
+            android:layout_marginRight="@dimen/size8"
+            android:gravity="center"
+            android:background="@drawable/back"
+            />
+
+        <TextView
+            android:id="@+id/widget_txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size2"
+            android:text="@string/add_widget"
+            android:gravity="center"
+            android:layout_below="@id/txtTitle"
+            android:textSize="@dimen/textSize16"
+            android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/appwidget_text"
+        android:layout_below="@id/widget_txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/appwidget_text"
+        android:gravity="center"
+        android:text="@string/appwidget_text"
+        android:textSize="@dimen/textSize12"
+        android:textStyle="bold|italic"
+        android:scrollbars="vertical"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
